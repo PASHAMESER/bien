@@ -1,13 +1,29 @@
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+
+  -webkit-box-sizing: border-box;
+  -moz-sizing: border-box;
+  -o-sizing: border-box;
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "Tajawal";
+  src: url(./fonts/Tajawal-Black.ttf);
+}
+
+@font-face {
+  font-family: "TajawalOne";
+  src: url(./fonts/Tajawal-Medium.ttf);
+}
 body {
   text-align: center;
+  background-color: #111111;
+  font-family: "TajawalOne";
 }
-.containrPage {
+/* .containrPage {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -44,5 +60,107 @@ img {
 #button:hover {
   background-color: #D00A47;
   border: solid 1px royalblue;
+  font-weight: bold;
+} */
+
+
+.containrPage {
+  height: 100vh;
+  width: 70%;
+  background-color: #232323;
+  margin: auto;
+}
+
+.containrPage header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #131316;
+  padding: 10px 0px;
+}
+
+.containrHeader{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 80%;
+}
+.containrHeader .boxSearch {
+  display: flex;
+  align-items: center;
+  width: 40%;
+}
+.containrHeader .boxSearch i {
+  position: relative;
+  right: 30px;
+  font-size: 20px;
+}
+
+
+.containrPage header .boxSearch input {
+  padding: 10px;
+  border-radius: 50px;
+  border: none;
+  width: 100%;
+  font-size: 18px;
+  text-align: center;
+}
+.containrPage header input:focus {
+  border: solid 1px red;
+  outline-color: #F3AF3E;
+  /* background-color: aqua; */
+}
+
+/* .containrPage header img {
+  cursor: pointer;
+} */
+
+.containrPage header .boxLogo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.containrPage header .boxLogo h1 {
+  color: #F3AF3E;
+}
+
+.containrPage .boxContent {
+  width: 90%;
+  margin: auto;
+}
+.containrPage .boxContent .divText {
+  width: 50%;
+  margin: auto;
+  letter-spacing: 1px;
+  line-height: 30px;
+  padding: 25px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.containrPage .boxContent .divText h2 {
+  direction: rtl;
+  color: #ced4da;
+}
+.containrPage .boxContent .divText h2 span {
+  color: #F3AF3E;
+}
+.containrPage .boxContent .divText p {
+  color: #ced4da;
+}
+.containrPage .boxContent .divText a {
+  color: black;
+  padding: 12px 30px;
+  background-color: #F3AF3E;
+  border-radius: 50px;
+  font-size: 16px;
+  transition: 0.3s;
+  margin-top: 20px;
+}
+.containrPage .boxContent .divText a:hover {
+  border-radius: 0px;
   font-weight: bold;
 }
