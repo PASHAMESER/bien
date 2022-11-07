@@ -164,3 +164,12 @@ img {
   border-radius: 0px;
   font-weight: bold;
 }
+
+@media (max-width: 767px) {
+  .containrPage {
+    width: 100%;
+  }
+  .containrPage .containrHeader .boxSearch , .boxLogo {
+    width: 100%;
+  }
+}
