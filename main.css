@@ -65,10 +65,10 @@ img {
 
 
 .containrPage {
-  height: 100vh;
   width: 70%;
   background-color: #232323;
   margin: auto;
+  padding-bottom: 50px;
 }
 
 .containrPage header {
@@ -175,4 +175,16 @@ img {
 }
 .displayToggle {
   display: none;
+}
+.containrPage .boxContentImg {
+  width: 90%;
+  margin: auto;
+}
+.containrPage .boxContentImg .divContentImg h2 {
+  padding: 30px;
+  color: #ced4da;
+}
+.containrPage .boxContentImg .divContentImg img{
+  width: 100%;
+  border-radius: 5px;
 }
