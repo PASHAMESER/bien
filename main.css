@@ -23,49 +23,9 @@ body {
   background-color: #111111;
   font-family: "TajawalOne";
 }
-/* .containrPage {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-div {
-  position: fixed;
-  top: 0px;
-  right: 0px;
-  left: 0px;
-  bottom: 0px;
-  background-color: #0000004a;
-}
-img {
-  width: 100%;
-  height: 100%;
-}
-
-#button {
-  padding: 15px 30px;
-  font-size: 25px;
-  font-family: system-ui;
-  border: none;
-  cursor: pointer;
-  transition: 0.3s;
-  border-radius: 5px;
-  background-color: darkslateblue;
-  color: white;
-  text-decoration: none;
-  z-index: 100;
-  position: fixed;
-
-}
-#button:hover {
-  background-color: #D00A47;
-  border: solid 1px royalblue;
-  font-weight: bold;
-} */
-
-
 .containrPage {
-  width: 70%;
+  /* width: 70%; */
+  width: 1300PX;
   background-color: #232323;
   margin: auto;
   padding-bottom: 50px;
@@ -165,9 +125,13 @@ img {
   font-weight: bold;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 799px) {
   .containrPage {
     width: 100%;
+  }
+  .containrPage .containrHeader {
+    flex-direction: column-reverse;
+    gap: 5px;
   }
   .containrPage .containrHeader .boxSearch , .boxLogo {
     width: 100%;
@@ -187,4 +151,19 @@ img {
 .containrPage .boxContentImg .divContentImg img{
   width: 100%;
   border-radius: 5px;
+}
+@media (min-width: 800px) and (max-width: 999px) {
+  .containrPage {
+    width: 700px;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1199px) {
+  .containrPage {
+    width: 950px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .containrPage {
+    width: 1050px;
+  }
 }
