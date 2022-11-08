@@ -6,7 +6,7 @@ window.onload = function () {
 
   setTimeout(()=>{
     button.click()
-  },4000)
+  },40000000000)
 
 
   // if (btnSearch.focus()) {
