@@ -4,9 +4,10 @@ let button = document.getElementById("button")
 
 window.onload = function () {
 
-  setTimeout(()=>{
-    button.click()
-  },40000000000)
+  // setTimeout(()=>{
+  //   button.click()
+  // },4000)
+  // clearTimeout()
 
 
   // if (btnSearch.focus()) {
