@@ -166,6 +166,12 @@ body {
 .containrPage .boxContentImg .divContentImg img{
   width: 100%;
   border-radius: 5px;
+  filter: blur(5px);
+  transition: 0.2s;
+}
+.containrPage .boxContentImg .divContentImg img:hover {
+  cursor: pointer;
+  filter: blur(0);
 }
 @media (min-width: 800px) and (max-width: 999px) {
   .containrPage {
