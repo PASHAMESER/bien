@@ -8,7 +8,10 @@
   -o-sizing: border-box;
   box-sizing: border-box;
 }
-
+::selection {
+  background-color: #F3AF3E;
+  color: #ced4da;
+}
 @font-face {
   font-family: "Tajawal";
   src: url(./fonts/Tajawal-Black.ttf);
@@ -89,6 +92,7 @@ body {
 .containrPage .boxContent {
   width: 90%;
   margin: auto;
+  padding: 20px 0px;
 }
 .containrPage .boxContent .divText {
   width: 50%;
@@ -100,6 +104,10 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(1px);
+  border-radius: 15px;
+  box-shadow: 0px 0px 16px 0px rgb(0 0 0 / 50%);
 }
 .containrPage .boxContent .divText h2 {
   direction: rtl;
