@@ -114,12 +114,27 @@ body {
 .containrPage .boxContent .divText a {
   color: black;
   padding: 12px 30px;
-  background-color: #F3AF3E;
+  /* background-color: #F3AF3E; */
+  background: linear-gradient(to right, #FF7B00, #FF8800 , #FF9500 , #FFA200 , #FFAA00 , #FFB700 , #FFC300 , #FFD000 , #FFDD00 );
+  background-size: 300% 300%;
+  animation: color 5s ease-in-out infinite;
   border-radius: 50px;
   font-size: 16px;
   transition: 0.3s;
   margin-top: 20px;
 }
+@keyframes color {
+  0%{
+    background-position: 0 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  0%{
+    background-position: 0 50%;
+  }
+}
+
 .containrPage .boxContent .divText a:hover {
   border-radius: 0px;
   font-weight: bold;
