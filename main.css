@@ -7,6 +7,7 @@
   -moz-sizing: border-box;
   -o-sizing: border-box;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 ::selection {
@@ -237,5 +238,169 @@ body {
 @media (min-width: 1200px) and (max-width: 1399px) {
   .containrPage {
     width: 1050px;
+  }
+}
+
+.bigBoxComments {
+  width: 50%;
+  margin: auto;
+}
+.bigBoxComments h1 {
+  padding: 15px 0px;
+  color: #F3AF3E;
+  /* background-color: #F3AF3E;
+  width: 50%;
+  margin: auto; */
+}
+.bigBoxComments .timeline {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+.bigBoxComments .timeline::before {
+  content: "";
+  background-color: #FFB700;
+  width: 4px;
+  position: absolute;
+  /* left: -50px; */
+  z-index: 1;
+  height: 100%;
+}
+.bigBoxComments .timeline .bigBoxComment {
+  display: flex;
+  align-items: flex-start;
+}
+.bigBoxComments .timeline .boxImg {
+  position: relative;
+  left: -25px;
+  z-index: 2;
+  top: -5px;
+}
+.bigBoxComments .timeline .boxImg img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.bigBoxComments .timeline .boxContentComment {
+  margin-bottom: 20px;
+  /* padding: 15px; */
+}
+.bigBoxComments .timeline .boxContentComment .divcontent {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(1px);
+  border-radius: 15px;
+  box-shadow: 0px 0px 16px 0px rgb(0 0 0 / 50%);
+  border: 1px solid hsla(0, 0%, 100%, .25);
+  padding: 20px;
+  min-height: 200px;
+  width: 500px;
+}
+.bigBoxComments .timeline .boxContentComment .devName {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* gap: 50px; */
+}
+
+.bigBoxComments .timeline .boxContentComment .devName span{
+  padding: 10px ;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+}
+.bigBoxComments .timeline .boxContentComment .devName #spanWorks{
+  background-color: cadetblue;
+  background: linear-gradient(to right, #FF7B00, #FF8800, #FF9500, #FFA200, #FFAA00);
+  animation: color 5s ease-in-out infinite;
+  background-size: 300% 300%;
+}
+
+.bigBoxComments .timeline .boxContentComment .devName a{
+  background: linear-gradient(to right, #FF7B00, #FF8800, #FF9500, #FFA200, #FFAA00);
+  animation: color 5s ease-in-out infinite;
+  background-size: 300% 300%;
+  border-radius: 50%;
+  color: white;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bigBoxComments .timeline .boxContentComment .devName a i {
+  font-size: 20px;
+}
+.bigBoxComments .timeline .boxContentComment p {
+  padding: 10px 0px;
+  color: #ced4da;
+  letter-spacing: 1px;
+}
+.bigBoxComments .timeline .boxContentComment #date {
+  position: absolute;
+  right: 0px;
+  bottom: 0;
+  padding: 10px 20px;
+  color: #131316;
+}
+
+@media (max-width: 499px) {
+  .bigBoxComments {
+    width: 80%;
+  }
+  .bigBoxComments .timeline .boxContentComment .divcontent {
+    width: 250px;
+  }
+  .bigBoxComments .timeline .boxContentComment .devName {
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+  .bigBoxComments .timeline .boxContentComment .devName span{
+    padding: 5px 2px;
+    font-size: 12px;
+    font-weight: 500;
+    color: white;
+  }
+  .bigBoxComments .timeline .boxContentComment p{
+    font-size: 12px;
+  }
+}
+
+
+
+@media  (min-width: 500px) and (max-width: 799px) {
+  .bigBoxComments {
+    width: 80%;
+  }
+  .bigBoxComments .timeline .boxContentComment .divcontent {
+    width: 350px;
+  }
+  .bigBoxComments .timeline .boxContentComment .devName {
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+  .bigBoxComments .timeline .boxContentComment .devName span{
+    padding: 10px 5px;
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+  }
+  .bigBoxComments .timeline .boxContentComment p{
+    font-size: 15px;
+  }
+}
+@media (min-width: 800px) and (max-width: 999px) {
+  .bigBoxComments {
+    width: 80%;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1199px) {
+  .bigBoxComments {
+    width: 60%;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .bigBoxComments {
+    width: 60%;
   }
 }
