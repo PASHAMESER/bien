@@ -225,7 +225,7 @@ body {
 
 @media (min-width: 800px) and (max-width: 999px) {
   .containrPage {
-    width: 700px;
+    width: 780px;
   }
 }
 
@@ -289,12 +289,33 @@ body {
 .bigBoxComments .timeline .boxContentComment .divcontent {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(1px);
-  border-radius: 15px;
+  border-radius: 5px;
   box-shadow: 0px 0px 16px 0px rgb(0 0 0 / 50%);
   border: 1px solid hsla(0, 0%, 100%, .25);
   padding: 20px;
   min-height: 200px;
-  width: 500px;
+  width: 600px;
+  transition: .3s;
+  z-index: 5;
+}
+.bigBoxComments .timeline .boxContentComment .divcontent::before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  background: inherit;
+  z-index: 1;
+  left: -10px;
+  transform: rotate(45deg);
+  transition: .3s;
+}
+.bigBoxComments .timeline .boxContentComment .divcontent:hover::before {
+  background:  #F3AF3E !important;
+  z-index: 10;
+}
+.bigBoxComments .timeline .boxContentComment .divcontent:hover {
+  border: solid 1px #F3AF3E;
+  box-shadow: #f3ae3e04 0px 2px 15px 0px;
 }
 .bigBoxComments .timeline .boxContentComment .devName {
   display: flex;
