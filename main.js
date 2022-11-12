@@ -21,3 +21,13 @@ window.onload = function () {
   // }
   
 }
+
+let bigBoxComment = document.querySelectorAll(".bigBoxComment")[0]
+let divcontent = document.querySelector(".divcontent")
+let boxImg = document.querySelector(".boxImg")
+
+bigBoxComment.addEventListener('mouseover' , function () {
+  boxImg.classList.add("classBorderSolid")
+  divcontent.classList.add("classBorderSolid")
+  boxImg.classList.add("classImgSize")
+})

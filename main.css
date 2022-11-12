@@ -276,12 +276,22 @@ body {
   left: -25px;
   z-index: 2;
   top: -5px;
+
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
 }
 .bigBoxComments .timeline .boxImg img {
-  height: 50px;
-  width: 50px;
+  height: 100%;
+  width: 100%;
   border-radius: 50%;
   cursor: pointer;
+}
+.bigBoxComments .timeline .boxImg img:hover {
+  /* transition: .3s;
+  height: 60px;
+  width: 60px;
+  border: solid #FFB700 2px; */
 }
 .bigBoxComments .timeline .boxContentComment {
   margin-bottom: 20px;
@@ -332,7 +342,6 @@ body {
   color: white;
 }
 .bigBoxComments .timeline .boxContentComment .devName #spanWorks{
-  background-color: cadetblue;
   background: linear-gradient(to right, #FF7B00, #FF8800, #FF9500, #FFA200, #FFAA00);
   animation: color 5s ease-in-out infinite;
   background-size: 300% 300%;
@@ -387,7 +396,14 @@ body {
     font-size: 12px;
   }
 }
-
+.classBorderSolid {
+  border: 2px solid #FFB700 !important;
+}
+.classImgSize {
+  height: 60px !important;
+  width: 60px !important;
+  transition: .3s;
+}
 
 
 @media  (min-width: 500px) and (max-width: 799px) {
