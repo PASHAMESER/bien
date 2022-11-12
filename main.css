@@ -2,6 +2,7 @@
   margin: 0px;
   padding: 0px;
   text-decoration: none;
+  transition: .1s;
 
   -webkit-box-sizing: border-box;
   -moz-sizing: border-box;
@@ -310,11 +311,11 @@ body {
   transition: .3s;
 }
 .bigBoxComments .timeline .boxContentComment .divcontent:hover::before {
-  background:  #F3AF3E !important;
+  background:  #FFB700 !important;
   z-index: 10;
 }
 .bigBoxComments .timeline .boxContentComment .divcontent:hover {
-  border: solid 1px #F3AF3E;
+  border: solid 1px #FFB700;
   box-shadow: #f3ae3e04 0px 2px 15px 0px;
 }
 .bigBoxComments .timeline .boxContentComment .devName {
