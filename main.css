@@ -15,14 +15,17 @@
   background-color: #F3AF3E;
   color: #ced4da;
 }
+
 ::-webkit-scrollbar {
   background-color: #111111;
 }
+
 ::-webkit-scrollbar-thumb {
   transition: 0.3s;
   background-color: #F3AF3E;
   border-radius: 8px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background-color: #FFAA00;
 }
@@ -246,6 +249,7 @@ body {
   width: 50%;
   margin: auto;
 }
+
 .bigBoxComments h1 {
   padding: 15px 0px;
   color: #F3AF3E;
@@ -253,11 +257,13 @@ body {
   width: 50%;
   margin: auto; */
 }
+
 .bigBoxComments .timeline {
   position: relative;
   display: flex;
   flex-wrap: wrap;
 }
+
 .bigBoxComments .timeline::before {
   content: "";
   background-color: #FFB700;
@@ -267,36 +273,42 @@ body {
   z-index: 1;
   height: 100%;
 }
+
 .bigBoxComments .timeline .bigBoxComment {
   display: flex;
   align-items: flex-start;
 }
+
 .bigBoxComments .timeline .boxImg {
   position: relative;
   left: -25px;
   z-index: 2;
   top: -5px;
 
-    border-radius: 50%;
-    height: 50px;
-    width: 50px;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
 }
+
 .bigBoxComments .timeline .boxImg img {
   height: 100%;
   width: 100%;
   border-radius: 50%;
   cursor: pointer;
 }
+
 .bigBoxComments .timeline .boxImg img:hover {
   /* transition: .3s;
   height: 60px;
   width: 60px;
   border: solid #FFB700 2px; */
 }
+
 .bigBoxComments .timeline .boxContentComment {
   margin-bottom: 20px;
   /* padding: 15px; */
 }
+
 .bigBoxComments .timeline .boxContentComment .divcontent {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(1px);
@@ -309,6 +321,7 @@ body {
   transition: .3s;
   z-index: 5;
 }
+
 .bigBoxComments .timeline .boxContentComment .divcontent::before {
   position: absolute;
   content: "";
@@ -320,14 +333,17 @@ body {
   transform: rotate(45deg);
   transition: .3s;
 }
+
 .bigBoxComments .timeline .boxContentComment .divcontent:hover::before {
-  background:  #FFB700 !important;
+  background: #FFB700 !important;
   z-index: 10;
 }
+
 .bigBoxComments .timeline .boxContentComment .divcontent:hover {
   border: solid 1px #FFB700;
   box-shadow: #f3ae3e04 0px 2px 15px 0px;
 }
+
 .bigBoxComments .timeline .boxContentComment .devName {
   display: flex;
   align-items: center;
@@ -335,7 +351,7 @@ body {
   /* gap: 50px; */
 }
 
-.bigBoxComments .timeline .boxContentComment .devName span{
+.bigBoxComments .timeline .boxContentComment .devName span {
   font-size: 18px;
   font-weight: 500;
   color: white;
@@ -345,13 +361,14 @@ body {
   align-items: center;
   justify-content: center;
 }
-.bigBoxComments .timeline .boxContentComment .devName #spanWorks{
+
+.bigBoxComments .timeline .boxContentComment .devName #spanWorks {
   background: linear-gradient(to right, #FF7B00, #FF8800, #FF9500, #FFA200, #FFAA00);
   animation: color 5s ease-in-out infinite;
   background-size: 300% 300%;
 }
 
-.bigBoxComments .timeline .boxContentComment .devName a{
+.bigBoxComments .timeline .boxContentComment .devName a {
   background: linear-gradient(to right, #FF7B00, #FF8800, #FF9500, #FFA200, #FFAA00);
   animation: color 5s ease-in-out infinite;
   background-size: 300% 300%;
@@ -363,14 +380,17 @@ body {
   align-items: center;
   justify-content: center;
 }
+
 .bigBoxComments .timeline .boxContentComment .devName a i {
   font-size: 20px;
 }
+
 .bigBoxComments .timeline .boxContentComment p {
   padding: 10px 0px;
   color: #ced4da;
   letter-spacing: 1px;
 }
+
 .bigBoxComments .timeline .boxContentComment #date {
   position: absolute;
   right: 0px;
@@ -383,26 +403,32 @@ body {
   .bigBoxComments {
     width: 80%;
   }
+
   .bigBoxComments .timeline .boxContentComment .divcontent {
     width: 250px;
   }
+
   .bigBoxComments .timeline .boxContentComment .devName {
     flex-wrap: wrap;
     gap: 5px;
   }
-  .bigBoxComments .timeline .boxContentComment .devName span{
+
+  .bigBoxComments .timeline .boxContentComment .devName span {
     padding: 5px 2px;
     font-size: 12px;
     font-weight: 500;
     color: white;
   }
-  .bigBoxComments .timeline .boxContentComment p{
+
+  .bigBoxComments .timeline .boxContentComment p {
     font-size: 12px;
   }
 }
+
 .classBorderSolid {
   border: 2px solid #FFB700 !important;
 }
+
 .classImgSize {
   height: 60px !important;
   width: 60px !important;
@@ -410,45 +436,52 @@ body {
 }
 
 
-@media  (min-width: 500px) and (max-width: 799px) {
+@media (min-width: 500px) and (max-width: 799px) {
   .bigBoxComments {
     width: 80%;
   }
+
   .bigBoxComments .timeline .boxContentComment .divcontent {
     width: 350px;
   }
+
   .bigBoxComments .timeline .boxContentComment .devName {
     flex-wrap: wrap;
     gap: 5px;
   }
-  .bigBoxComments .timeline .boxContentComment .devName span{
+
+  .bigBoxComments .timeline .boxContentComment .devName span {
     padding: 10px 5px;
     font-size: 15px;
     font-weight: 500;
     color: white;
   }
-  .bigBoxComments .timeline .boxContentComment p{
+
+  .bigBoxComments .timeline .boxContentComment p {
     font-size: 15px;
   }
 }
+
 @media (min-width: 800px) and (max-width: 999px) {
   .bigBoxComments {
     width: 80%;
   }
 }
+
 @media (min-width: 1000px) and (max-width: 1199px) {
   .bigBoxComments {
     width: 60%;
   }
 }
+
 @media (min-width: 1200px) and (max-width: 1399px) {
   .bigBoxComments {
     width: 60%;
   }
 }
 
- /* كود الفوتر */
- footer {
+/* كود الفوتر */
+footer {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -456,10 +489,10 @@ body {
   height: 70px;
   background-color: #131316;
   width: 100%;
- }
-footer .containr {
-  
 }
+
+footer .containr {}
+
 footer .containr h2 {
   color: #ced4da;
   font-size: 18px;
