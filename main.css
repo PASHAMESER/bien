@@ -48,7 +48,7 @@ body {
   width: 1300PX;
   background-color: #232323;
   margin: auto;
-  padding-bottom: 50px;
+  /* padding-bottom: 50px; */
 }
 
 .containrPage header {
@@ -445,4 +445,22 @@ body {
   .bigBoxComments {
     width: 60%;
   }
+}
+
+ /* كود الفوتر */
+ footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  height: 70px;
+  background-color: #131316;
+  width: 100%;
+ }
+footer .containr {
+  
+}
+footer .containr h2 {
+  color: #ced4da;
+  font-size: 18px;
 }
