@@ -298,10 +298,10 @@ body {
 }
 
 .bigBoxComments .timeline .boxImg img:hover {
-  /* transition: .3s;
-  height: 60px;
-  width: 60px;
-  border: solid #FFB700 2px; */
+  transition: .3s;
+  height: 55px;
+  width: 55px;
+  border: solid #FFB700 2px;
 }
 
 .bigBoxComments .timeline .boxContentComment {
