@@ -284,7 +284,6 @@ body {
   left: -25px;
   z-index: 2;
   top: -5px;
-
   border-radius: 50%;
   height: 50px;
   width: 50px;
@@ -302,6 +301,7 @@ body {
   height: 55px;
   width: 55px;
   border: solid #FFB700 2px;
+  
 }
 
 .bigBoxComments .timeline .boxContentComment {
@@ -430,8 +430,8 @@ body {
 }
 
 .classImgSize {
-  height: 60px !important;
-  width: 60px !important;
+  height: 59px !important;
+  width: 59px !important;
   transition: .3s;
 }
 
