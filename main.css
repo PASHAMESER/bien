@@ -3,7 +3,6 @@
   padding: 0px;
   text-decoration: none;
   transition: .1s;
-
   -webkit-box-sizing: border-box;
   -moz-sizing: border-box;
   -o-sizing: border-box;
@@ -12,8 +11,8 @@
 }
 
 ::selection {
-  background-color: #F3AF3E;
-  color: #ced4da;
+  background-color: #FF8800;
+  color: #fff;
 }
 
 ::-webkit-scrollbar {
@@ -44,6 +43,45 @@ body {
   text-align: center;
   background-color: #111111;
   font-family: "TajawalOne";
+}
+
+.containrBoxShow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 100;
+  transition: .3s;
+  transform: scale(0);
+}
+.boxShow {
+  height: 350px;
+  width: 400px;
+  background-color: #ced4da;
+  border-radius: 5px;
+  position: fixed;
+  z-index: 100;
+}
+.boxShow #spanClose {
+  background-color: #FF9500;
+  font-size: 20px;
+  border-radius: 0px 5px 0px 5px;
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+  transition: 0.3s;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.boxShow #spanClose:hover {
+  transform: translate(-5px , 5px);
+  transition-delay: .3s;
+  color: white;
 }
 
 .containrPage {
@@ -83,16 +121,17 @@ body {
 }
 
 
-.containrPage header .boxSearch input {
+.containrPage header .boxSearch #btnSearch {
   padding: 10px;
   border-radius: 50px;
   border: none;
   width: 100%;
   font-size: 18px;
   text-align: center;
+  caret-color: #F3AF3E;
 }
 
-.containrPage header input:focus {
+.containrPage header #btnSearch:focus {
   border: solid 1px red;
   outline-color: #F3AF3E;
   /* background-color: aqua; */
@@ -153,7 +192,7 @@ body {
   color: #ced4da;
 }
 
-.containrPage .boxContent .divText a {
+.containrPage .boxContent .divText #button {
   color: black;
   padding: 12px 30px;
   /* background-color: #F3AF3E; */
@@ -180,7 +219,7 @@ body {
   }
 }
 
-.containrPage .boxContent .divText a:hover {
+.containrPage .boxContent .divText #button:hover {
   border-radius: 0px;
   font-weight: bold;
 }
